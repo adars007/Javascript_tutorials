@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>Learning Set TimeOut</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // const changeInterval = function(){
+    //     console.log("Hello",Date.now());
+    // }
+    //  const intervalID = setInterval(changeInterval, 1000);
+    // clearInterval(intervalID);
+    // setInterval()
+    let changeeee = function(){
+    document.querySelector('h1').innerHTML = "Interval has started"
+    console.log("started");
+    }
+    let intervalidd;
+   document.querySelector('#start').addEventListener('click',function(){
+        intervalidd = setInterval(changeeee,Date.now,1000);
+    })
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(intervalidd);
+    })
+   
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <h1>Learning Set TimeOut</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // set time out receives function and perform the code
+    let changeName = function(){
+        // console.log("Adarsh");
+        document.querySelector('h1').innerHTML = "Hey I am learning Javascript"
+    }
+   const changeMe = setTimeout(changeName,2000)
+   document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    })
+</script>
+</html>

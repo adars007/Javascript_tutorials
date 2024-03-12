@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DOM LEARNING</title>
+  <style>
+    .bg-black{
+      background: #212121;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <div>
+    <h1 id="title" class="heading">Dom Learning on YOUTUBE <span style="display: none;"> test text</span>  </h1>
+    <h2>Lorem ipsum dolor sit amet .</h2>
+    <h2>Lorem ipsum dolor sit amet .</h2>
+    <h2>Lorem ipsum dolor sit amet .</h2>
+    <h2>Lorem ipsum dolor sit amet .</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li class="list-item">one</li>
+      <li class="list-item">two</li>
+      <li class="list-item">three</li>
+      <li class="list-item">four</li>
+    </ul>
+  </div>
+</body>
+<!-- <script>
+console of pages
+Manipulation of pages
+1. Target element by id
+document.getElementById('title')
+2. To access the information of the id
+document.getElementById('title').className
+3. We can check attribute also
+document.getElementById('title').getAttribute('id'/'class')
+4. SET ATTRIBUTES
+document.getElementById('title').setAttribute('class','test')
+5.Store in variable to access easily
+const title = document.getElementById('title')
+
+6.To add style elemnt
+
+title.style.bgColor = "Orange"
+title.style.padding = "15px"
+title.style.borderRadius = "10px"
+
+7.HOW TO ADD CONTENTS 
+
+title.textContent-> Text content mei wo sara content dikhega jisme styling ho yaa naa ho but innerTexr mei aisa nhi hai
+title.innerHTML-> Ye pura html okaa view dega agar koi styling apply kra hai to.
+title.innerText -> Inner text mein bs wo text dikhega jo uske andar visible hai agar hm style displaye mein none laga de to inner text mein visible nhi hoga
+ 
+8.by class name
+document.getByClassName('heading')
+
+9. Query selector
+document.querySelector('h2')->It selects only first and single query at once
+document.querySelector('#title')->It is used to access the id using the slector '#'
+document.querySelector('.heading')->It is used to access the class using the query selector by using dot(.) operator
+document.quuerySelector(input[type = "password"])
+doument.querySelectoR('p:firstChild')
+
+10.To access different list using queryselector
+const myl = document.querySelector('ul')
+const turnGreen = myul.querySelector('li')
+turnGreen.style.bgColor = " Orange"
+turnGreen.style.padding = "15px"
+turnGreen.innerText = "Five"->It will overwrite the current text and manipulate it over five
+
+11.QuerySelectorAll->Gives Node List
+document.querySelectorAll('li')->Gives Node list 
+Node list and html collections are not pure array
+
+ const tempLiList = document.querySelectorAll('li')
+tempLiList->Node list
+tempLiList[0].style.bgColor = "Green"
+Node list is different from array so to access or to use them we need to tell the compiler about which element we want to manipulate [].
+
+12. Even if there is a single selector still it behave as node list 
+const myH1 = document.querySelectorAll('h1')
+myH1[0].style.bgcolor = "orange"
+This is the major differeve between the queryselector and query selector all that which kind of collection they are passing
+
+tempLiList.forEach(function(li)
+{
+  l.style.bgcolor="color",
+  l.style.padding = "15px"
+})
+
+const tempClassList = document.getElementByClassName('list-item')->It gives html collection there is no looping method so to convert it into array
+
+13.Convert Node list/html collection to Array
+const myconArray = Array.from(tempClassList)->It will give an array now
+ myconArray.forEach(function(li){
+  li.style.bgcolor= "orange",
+  li.styel.padding = "15px"
+ })
+/script> -->
+
+</html>

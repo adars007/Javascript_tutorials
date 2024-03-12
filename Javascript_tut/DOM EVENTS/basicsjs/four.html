@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or Code</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // It is function to add the list element
+    function addLanguage(langName) {
+      const li = document.createElement('li')
+      li.innerHTML = `${langName}`
+      document.querySelector('.language').appendChild(li)//-->Appendchild method use to attach the method with other function
+    }
+    addLanguage("python")
+    addLanguage("Typescript")
+    // It is function to add the list element but in optimised way by using appendchild and not neeed of traversing the whole class
+    function addOptiLan(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+    }
+    addOptiLan('golang')
+
+    //EDIT AND REMOVE OF ELEMENT
+    //Edit of text content
+   const secondLang =  document.querySelector('li:nth-child(2)')
+   const newli = document.createElement('li')
+   newli.textContent = "Mojo"
+   secondLang.replaceWith(newli)
+   //Edit
+   const firstLang = document.querySelector("li:first-child")
+   firstLang.outerHTML = '<li>Typescript</li>'
+   //REMOVE
+   const lastLang = document.querySelector("li:last-child")
+   lastLang.remove()
+
+
+</script>
+</html>
